@@ -1,0 +1,309 @@
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color:#1c1c1c;
+}
+
+.App-link {
+  color: #ffffff;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+button {
+  font-size: calc(10px + 2vmin);
+}
+
+.barra {
+  display: flex;
+  flex-direction: column;
+  
+ }
+
+.links {
+  color: rgb(245, 234, 234);
+  text-decoration: none;
+   display: flex;
+   justify-content:flex-end;
+   letter-spacing: 1pt;
+   list-style: none;
+   
+   
+ }
+ 
+ .rutitas {
+   color: #ffffff;
+   margin: 10px;
+   text-decoration: none;
+ }
+
+ 
+.botonAbajo {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  width: 40px;
+
+}
+
+ .produ {
+  display:flex ;
+  width: 400px;
+  justify-content: center;
+ border-bottom: 2px solid darkslategrey ;
+ font-size: 25px;
+
+ }
+
+ .inicio {
+   
+   display: flex;
+   align-items: center;
+  flex-direction: column;
+  border-bottom: #61dafb;
+ }
+
+ .carrusel {
+   display: flex;
+   align-items: center;
+   margin-top: 400px;
+   width: 800px;
+   height: 100px;
+ }
+
+ .titulo {
+   font-size: 30px;
+   display:flex ;
+   margin-top: 200px;
+   border-spacing: 1px;
+  border-bottom: 2px solid rgb(55, 99, 100);
+ }
+
+ .tituloAudio {
+  font-size: 50px;
+  border-spacing: 5px;
+  border-bottom: 3px solid rgb(55, 99, 100) ;
+ }
+
+ .botoncitos {
+   width: 1000px;
+   display: flex;
+   margin-top: 150px;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+ 
+  }
+
+
+  #botonaudiovisual{
+    background-image: url(C:\Users\Ian\Documents\Proyectos\polleadaSP\src\imagenes\video_icon.png);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    border-radius: 50%;
+    background-size: 110%;
+    width: 240px;
+    height: 240px;
+    border-color: #1c1c1c;
+  
+  }
+
+  #botonredes{
+    background-image: url(C:\Users\Ian\Documents\Proyectos\polleadaSP\src\imagenes\redes_icon.png);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    border-radius: 50%;
+    background-size: 110%;
+    width: 240px;
+    height: 240px;
+    border-color: #1c1c1c;
+
+  }
+
+  #boton3d{
+    background-image: url(C:\Users\Ian\Documents\Proyectos\polleadaSP\src\imagenes\3d_icon.png);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    border-radius: 50%;
+    background-size: 110%;
+    width: 240px;
+    height: 240px;
+    border-color: #1c1c1c;
+
+  }
+  
+ .botonEnfoque {
+    display: flex;
+    justify-content: left;
+    width: 200px;
+    height: 20%;
+    
+  }  
+
+  .carrusel {
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+  }
+
+  /* .carrousel1 {
+    background-image: url(C:\Users\Ian\Documents\Proyectos\polleadaSP\src\imagenes\_MG_8745.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    width: 1000px;
+    
+  } */
+
+  /* .carrousel2 {
+    background-image: url(C:\Users\Ian\Documents\Proyectos\polleadaSP\src\imagenes\11.JPG);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    width: 800px;
+    height: 200px;
+  } */
+
+  .carrousel3 {
+    background-image: url(C:\Users\Ian\Documents\Proyectos\polleadaSP\src\imagenes\88_urban_poster_mockup.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    width: 800px;
+    height: 200px;
+  }
+
+  .texto1 {
+    display: flex;
+    width: 400px;
+    margin-top: 60px;
+  }
+ 
+  .video {
+    margin-top: 80px;
+
+  }
+
+  /* Hasta aca todo CSS de INICIO */
+
+  .titulocontacto {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .formulario {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    margin-inline-start: -220px;
+    
+  }
+
+  .portadaaudiovisual {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-image: url(C:\Users\Ian\Documents\Proyectos\polleadaSP\src\imagenes\PORTADA.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 800px;
+  }
+
+  .livesession {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 100px;
+    
+  }
+
+  .textolive{
+    display: flex;
+    flex-direction: column;
+    padding-inline-start: 50px;
+    justify-content: flex-start;
+    width: 400px;
+  }
+
+  .cuadroFotos {
+    display: flex;
+    margin-top: 800px;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+    justify-content: center;
+    object-fit: cover;
+    
+  }
+
+  .cuadradoFotos {
+    width: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 50%;
+  }
+
+ /* Aca arranco css diseño y redes */
+
+ .botonDiseño {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   
+ }
+
+ .portadaDiseño {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-image: url(C:\Users\Ian\Documents\Proyectos\polleadaSP\src\imagenes\6.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 800px;
+ }
+
+ .tituloDiseño {
+   display: flex;
+   justify-content: center;
+   height: 50px;
+   margin-top: 80px;
+  border-bottom: 3px solid rgb(55, 99, 100) ;
+   
+
+ }
