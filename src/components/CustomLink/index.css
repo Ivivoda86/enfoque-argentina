@@ -1,0 +1,7 @@
+.botonesLinks {
+    background: transparent;
+    border: none;
+    color: white;
+    text-underline-position: from-font;
+    cursor: pointer;
+}
