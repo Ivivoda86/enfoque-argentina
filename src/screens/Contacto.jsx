@@ -6,10 +6,11 @@ const Contacto = () => {
   const { contactos, setContactos } = useState([{}]);
 
   return (
-    <div className="titulocontacto">
-      <div>
+    <div>
+      <div className="titulocontacto">
         <h1> CONTACTO</h1>
       </div>
+
       <div className="formulario">
         <Formulario
           inputs={[
@@ -20,7 +21,7 @@ const Contacto = () => {
               tipo: "number",
             },
             { placeholder: "Mail", name: "mail", tipo: "string" },
-            { placeholder: "Consulta", name: "consulta"},
+            { placeholder: "Consulta", name: "consulta" },
           ]}
           tituloBoton={"Enviar"}
           onSubmit={(evento) => {
@@ -29,20 +30,18 @@ const Contacto = () => {
               telefono: evento.target[1].value,
               mail: evento.target[2].value,
               consulta: evento.target[3].value,
-            }
-            setVendido(()=>{
-                const nuevoContacto = [...contactos, data]
-                console.log(nuevoContacto)
-                return nuevoContacto
-            })
-            
-            return [contactos]
+            };
+            setVendido(() => {
+              const nuevoContacto = [...contactos, data];
+              console.log(nuevoContacto);
+              return nuevoContacto;
+            });
+
+            return [contactos];
           }}
         ></Formulario>
       </div>
-      <div >
-          
-      </div>
+      <div></div>
     </div>
   );
 };

@@ -44,8 +44,33 @@ button {
 
 .barra {
   display: flex;
-  flex-direction: column;
   
+ }
+
+ .footer {
+   display:flex;
+   justify-content: center;
+   background-color: black;
+   min-height: 200px;
+
+ }
+ 
+ .enfoqueFooter {
+   display: flex;
+   margin: 100px;
+
+ }
+
+ .redesFooter {
+   display: flex;
+   justify-content: left;
+   margin: 100px;
+ }
+
+ .contactoFooter {
+  display: flex;
+  justify-content: left;
+  margin: 100px;
  }
 
 .links {
@@ -74,6 +99,11 @@ button {
 
 }
 
+.flechitaDelOrto {
+  background-color: transparent;
+  border-color: transparent;
+}
+
  .produ {
   display:flex ;
   width: 400px;
@@ -99,9 +129,14 @@ button {
    height: 100px;
  }
 
+ 
+
  .titulo {
    font-size: 30px;
    display:flex ;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
    margin-top: 200px;
    border-spacing: 1px;
   border-bottom: 2px solid rgb(55, 99, 100);
@@ -126,7 +161,7 @@ button {
 
 
   #botonaudiovisual{
-    background-image: url(C:\Users\Ian\Documents\Proyectos\polleadaSP\src\imagenes\video_icon.png);
+    background-image: url(C:\Users\Ian\Documents\Proyectos\polleadaSP\src\images\video_icon.png);
     background-repeat: no-repeat;
     background-position: 50%;
     border-radius: 50%;
@@ -138,7 +173,7 @@ button {
   }
 
   #botonredes{
-    background-image: url(C:\Users\Ian\Documents\Proyectos\polleadaSP\src\imagenes\redes_icon.png);
+    background-image: url(C:\Users\Ian\Documents\Proyectos\polleadaSP\src\images\redes_icon.png);
     background-repeat: no-repeat;
     background-position: 50%;
     border-radius: 50%;
@@ -150,7 +185,7 @@ button {
   }
 
   #boton3d{
-    background-image: url(C:\Users\Ian\Documents\Proyectos\polleadaSP\src\imagenes\3d_icon.png);
+    background-image: url(C:\Users\Ian\Documents\Proyectos\polleadaSP\src\images\3d_icon.png);
     background-repeat: no-repeat;
     background-position: 50%;
     border-radius: 50%;
@@ -162,17 +197,38 @@ button {
   }
   
  .botonEnfoque {
-    display: flex;
-    justify-content: left;
     width: 200px;
-    height: 20%;
-    
+    height: 50px;
+    margin: 20px
+   
   }  
 
-  .carrusel {
+  .carroFotos {
+    width: 1400px;
+    height: 400px;
+  }
+
+  .fotosCarro {
     display: flex;
-    flex-direction: row;
-    height: 100px;
+    justify-content: center;
+    height: 100%;
+    width: auto;
+    margin-top: 50px;
+  }
+
+  .botonCarro {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    margin: 10px;
+    margin-top: -10px;
+  }
+
+  .botonCarro2 {
+    display: flex;
+    justify-content: center;
   }
 
   /* .carrousel1 {
@@ -194,7 +250,7 @@ button {
   } */
 
   .carrousel3 {
-    background-image: url(C:\Users\Ian\Documents\Proyectos\polleadaSP\src\imagenes\88_urban_poster_mockup.png);
+    background-image: url(C:\Users\Ian\Documents\Proyectos\polleadaSP\src\images\88_urban_poster_mockup.png);
     background-repeat: no-repeat;
     background-size: 100%;
     display: flex;
@@ -213,21 +269,43 @@ button {
 
   }
 
+  .flechaAbajoInicio {
+    display:flex;
+    justify-content: center;
+    background-color: #61dafb;
+  }
+
+  .imagencitas {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 300px;
+    justify-content: space-between ;
+    margin-top: 40%;
+    margin-bottom: 40%;
+  }
+
+
   /* Hasta aca todo CSS de INICIO */
 
   .titulocontacto {
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    align-items: center;
+    border: 1px solid red;
+    
+  }
+  
+  .contacto {
+    display:flex;
+    justify-content: center;
+    
   }
 
   .formulario {
     display: flex;
     justify-content: center;
-    margin-top: 100px;
-    margin-inline-start: -220px;
-    
+    margin-top: 20px;
+  
   }
 
   .portadaaudiovisual {
@@ -235,7 +313,7 @@ button {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    background-image: url(C:\Users\Ian\Documents\Proyectos\polleadaSP\src\imagenes\PORTADA.jpg);
+    background-image: url(C:\Users\Ian\Documents\Proyectos\polleadaSP\src\images\PORTADA.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -258,23 +336,28 @@ button {
     width: 400px;
   }
 
+  .textolive2{
+    display: flex;
+    flex-direction: column;
+    padding-inline-start: 50px;
+    width: 400px;
+    height: 300px;
+  }
+
   .cuadroFotos {
     display: flex;
-    margin-top: 800px;
-    width: 100%;
-    height: auto;
-    justify-content: space-between;
     justify-content: center;
-    object-fit: cover;
-    
   }
 
   .cuadradoFotos {
-    width: 100px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    height: 50%;
+    width: 200px;
+    height: 200px;
+  }
+
+  .cajaFotos {
+    display: flex;
+    height: 100%;
   }
 
  /* Aca arranco css diseño y redes */
@@ -291,7 +374,7 @@ button {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  background-image: url(C:\Users\Ian\Documents\Proyectos\polleadaSP\src\imagenes\6.png);
+  background-image: url(http://127.0.0.1:8887/PORTADA%20dise%C3%B1o.png);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -303,7 +386,112 @@ button {
    justify-content: center;
    height: 50px;
    margin-top: 80px;
-  border-bottom: 3px solid rgb(55, 99, 100) ;
-   
-
+  
  }
+
+ .videoclipAudiovisual {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 100px;
+  border-top-width: 50px;
+  
+ margin-bottom: 100px;
+ }
+
+.tituloSpot {
+  display: flex;
+  justify-content: center;
+  
+}
+
+.descripcionSpot {
+  display: flex;
+ justify-content: center;
+  color: rgb(55, 99, 100);
+}
+
+.ute {
+  display: flex;
+   justify-content: center;
+   height: 50px;
+   margin-top: 80px;
+  
+}
+
+.descripcionUte {
+  display: flex;
+  justify-content: center;
+}
+
+.videoFraza {
+  display: flex;
+  justify-content: center;
+}
+
+
+/* Aca arranco pantalla 3D */
+
+.portada3D {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-image: url(http://127.0.0.1:8887/portada3D.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 800px;
+}
+
+.fotos3D {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.teclados {
+  display: flex;
+  justify-content: center;
+  
+}
+
+.fotosEfecto {
+  display: flex;
+  justify-content: center;
+  height: 700px;
+  margin-top: 100px;
+  
+}
+
+.fotosEfecto2 {
+  display: flex;
+  justify-content: center;
+  height: 500px;
+}
+
+.fotosEfecto3 {
+  display: flex;
+  justify-content: center;
+  height: 400px;
+}
+
+.fotosEfecto4 {
+  display: flex;
+  justify-content: center;
+  height: 700px;
+  margin-top: -100px;
+}
+
+.fotosEfecto5 {
+  display: flex;
+  justify-content: center;
+  height: 500px;
+}
+
+.fotosEfecto6 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 80px;
+}

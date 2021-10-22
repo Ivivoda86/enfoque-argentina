@@ -2,6 +2,9 @@ import React, { useRef } from "react";
 import { Carousel, CarouselItem } from "react-bootstrap";
 import BotonIconos from "../components/BotonIconos";
 import BotonArriba from "../components/BotonArriba";
+import Imagencitas from "../components/Imagencitas";
+import Carrousell from "../components/Carrousell";
+import Carru from "../components/Carru";
 
 const Inicio = () => {
   const scrollRef = useRef(null);
@@ -10,6 +13,7 @@ const Inicio = () => {
       <div className="produ">
         <h1>PRODUCCIONES AUDIOVISUALES</h1>
       </div>
+
       <div className="botoncitos">
         <BotonIconos
           nombreBoton={"AUDIOVISUAL"}
@@ -23,15 +27,15 @@ const Inicio = () => {
         ></BotonIconos>
         <BotonIconos nombreBoton={"3D"} id="boton3d" ruta={"/3D"}></BotonIconos>
       </div>
-      {/* <div classname="flechaAbajoInicio">
-        <BotonArriba
-          onClickProp={() => {
-            scrollRef.current.scrollIntoView();
-          }}
-        ></BotonArriba>
-      </div> */}
 
       <div ref={scrollRef} className="titulo" stlye={{ display: "flex" }}>
+        <div>
+          <BotonArriba
+            onClickProp={() => {
+              scrollRef.current.scrollIntoView();
+            }}
+          ></BotonArriba>
+        </div>
         <h1>QUIENES SOMOS</h1>
       </div>
       <div className="video">
@@ -58,18 +62,11 @@ const Inicio = () => {
         </p>
       </div>
       <hr style={{ width: "400px", marginTop: "100px" }}></hr>
-      <div className="carrusel">
-        <Carousel>
-          <CarouselItem>
-            <img className="carrousel1"></img>
-          </CarouselItem>
-          <CarouselItem>
-            <img className="carrousel2"></img>
-          </CarouselItem>
-          <CarouselItem>
-            <img className="carrousel3"></img>
-          </CarouselItem>
-        </Carousel>
+      <div>
+        <Carru></Carru>
+      </div>
+      <div style={{marginTop:100}}>
+        <Imagencitas></Imagencitas>
       </div>
     </div>
   );

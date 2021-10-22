@@ -6,7 +6,7 @@ const BotonIconos = (props) => {
   const history = useHistory();
   return (
     <div>
-      <button style={{display:"flex", height:"200px", width: "200px"}}
+      <button style={{display:"flex", height:"150px", width: "150px"}}
         id={id}
         ruta={ruta}
         onClick={() => {
