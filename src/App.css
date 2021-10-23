@@ -1,237 +1,190 @@
-
 .App {
-  text-align: center;
+	text-align: center;
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+	height: 40vmin;
+	pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+	.App-logo {
+		animation: App-logo-spin infinite 20s linear;
+	}
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color:#1c1c1c;
+	background-color: #282c34;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: calc(10px + 2vmin);
+	color: #1c1c1c;
 }
 
 .App-link {
-  color: #ffffff;
+	color: #ffffff;
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
 }
 
 button {
-  font-size: calc(10px + 2vmin);
+	font-size: calc(10px + 2vmin);
 }
 
 .barra {
-  display: flex;
-  
- }
+	display: flex;
+}
 
- .footer {
-   display:flex;
-   justify-content: center;
-   background-color: black;
-   min-height: 200px;
+.footer {
+	display: flex;
+	justify-content: center;
+	background-color: black;
+	min-height: 200px;
+}
 
- }
- 
- .enfoqueFooter {
-   display: flex;
-   margin: 100px;
+.enfoqueFooter {
+	display: flex;
+	margin: 100px;
+}
 
- }
+.redesFooter {
+	display: flex;
+	justify-content: left;
+	margin: 100px;
+}
 
- .redesFooter {
-   display: flex;
-   justify-content: left;
-   margin: 100px;
- }
-
- .contactoFooter {
-  display: flex;
-  justify-content: left;
-  margin: 100px;
- }
+.contactoFooter {
+	display: flex;
+	justify-content: left;
+	margin: 100px;
+}
 
 .links {
-  color: rgb(245, 234, 234);
-  text-decoration: none;
-   display: flex;
-   justify-content:flex-end;
-   letter-spacing: 1pt;
-   list-style: none;
-   
-   
- }
- 
- .rutitas {
-   color: #ffffff;
-   margin: 10px;
-   text-decoration: none;
- }
+	color: rgb(245, 234, 234);
+	text-decoration: none;
+	display: flex;
+	justify-content: flex-end;
+	letter-spacing: 1pt;
+	list-style: none;
+}
 
- 
+.rutitas {
+	color: #ffffff;
+	margin: 10px;
+	text-decoration: none;
+}
+
 .botonAbajo {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  width: 40px;
-
+	position: absolute;
+	display: flex;
+	align-items: center;
+	width: 40px;
 }
 
 .flechitaDelOrto {
-  background-color: transparent;
+	background-color: transparent;
   border-color: transparent;
+  cursor: pointer;
 }
 
- .produ {
-  display:flex ;
-  width: 400px;
-  justify-content: center;
- border-bottom: 2px solid darkslategrey ;
- font-size: 25px;
+.produ {
+	display: flex;
+	/* width: 400px; */
+	justify-content: center;
+	border-bottom: 2px solid darkslategrey;
+	font-size: 25px;
+}
 
- }
+.inicio {
+	display: flex;
+	/* align-items: center; */
+	flex-direction: column;
+	border-bottom: #61dafb;
+}
 
- .inicio {
-   
-   display: flex;
-   align-items: center;
-  flex-direction: column;
-  border-bottom: #61dafb;
- }
+.carrusel {
+	display: flex;
+	align-items: center;
+	margin-top: 400px;
+	width: 800px;
+	height: 100px;
+}
 
- .carrusel {
-   display: flex;
-   align-items: center;
-   margin-top: 400px;
-   width: 800px;
-   height: 100px;
- }
+.titulo {
+	font-size: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 200px;
+	border-spacing: 1px;
+	border-bottom: 2px solid rgb(55, 99, 100);
+}
 
- 
+.tituloAudio {
+	font-size: 50px;
+	border-spacing: 5px;
+	border-bottom: 3px solid rgb(55, 99, 100);
+}
 
- .titulo {
-   font-size: 30px;
-   display:flex ;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   margin-top: 200px;
-   border-spacing: 1px;
-  border-bottom: 2px solid rgb(55, 99, 100);
- }
+.botoncitos {
+	width: 1000px;
+	display: flex;
+	margin-top: 150px;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	height: 100px;
+}
 
- .tituloAudio {
-  font-size: 50px;
-  border-spacing: 5px;
-  border-bottom: 3px solid rgb(55, 99, 100) ;
- }
+.botonesInicio {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
 
- .botoncitos {
-   width: 1000px;
-   display: flex;
-   margin-top: 150px;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  height: 100px;
- 
-  }
+.botonEnfoque {
+	width: 200px;
+	height: 50px;
+	margin: 20px;
+}
 
+.carroFotos {
+	width: 1400px;
+	height: 400px;
+}
 
-  #botonaudiovisual{
-    background-image: url(C:\Users\Ian\Documents\Proyectos\polleadaSP\src\images\video_icon.png);
-    background-repeat: no-repeat;
-    background-position: 50%;
-    border-radius: 50%;
-    background-size: 110%;
-    width: 240px;
-    height: 240px;
-    border-color: #1c1c1c;
-  
-  }
+.fotosCarro {
+	width: 100%;
+	margin-top: 50px;
+}
 
-  #botonredes{
-    background-image: url(C:\Users\Ian\Documents\Proyectos\polleadaSP\src\images\redes_icon.png);
-    background-repeat: no-repeat;
-    background-position: 50%;
-    border-radius: 50%;
-    background-size: 110%;
-    width: 240px;
-    height: 240px;
-    border-color: #1c1c1c;
+.botonCarro {
+	display: flex;
+	justify-content: center;
+	background-color: black;
+	color: white;
+	border-radius: 10px;
+	margin: 10px;
+	margin-top: -10px;
+}
 
-  }
+.botonCarro2 {
+	display: flex;
+	justify-content: center;
+}
 
-  #boton3d{
-    background-image: url(C:\Users\Ian\Documents\Proyectos\polleadaSP\src\images\3d_icon.png);
-    background-repeat: no-repeat;
-    background-position: 50%;
-    border-radius: 50%;
-    background-size: 110%;
-    width: 240px;
-    height: 240px;
-    border-color: #1c1c1c;
-
-  }
-  
- .botonEnfoque {
-    width: 200px;
-    height: 50px;
-    margin: 20px
-   
-  }  
-
-  .carroFotos {
-    width: 1400px;
-    height: 400px;
-  }
-
-  .fotosCarro {
-    display: flex;
-    justify-content: center;
-    height: 100%;
-    width: auto;
-    margin-top: 50px;
-  }
-
-  .botonCarro {
-    display: flex;
-    justify-content: center;
-    background-color: black;
-    color: white;
-    border-radius: 10px;
-    margin: 10px;
-    margin-top: -10px;
-  }
-
-  .botonCarro2 {
-    display: flex;
-    justify-content: center;
-  }
-
-  /* .carrousel1 {
+/* .carrousel1 {
     background-image: url(C:\Users\Ian\Documents\Proyectos\polleadaSP\src\imagenes\_MG_8745.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
@@ -240,7 +193,7 @@ button {
     
   } */
 
-  /* .carrousel2 {
+/* .carrousel2 {
     background-image: url(C:\Users\Ian\Documents\Proyectos\polleadaSP\src\imagenes\11.JPG);
     background-repeat: no-repeat;
     background-size: 100%;
@@ -249,249 +202,236 @@ button {
     height: 200px;
   } */
 
-  .carrousel3 {
-    background-image: url(C:\Users\Ian\Documents\Proyectos\polleadaSP\src\images\88_urban_poster_mockup.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    display: flex;
-    width: 800px;
-    height: 200px;
-  }
+.carrousel3 {
+	background-image: url(C:\Users\Ian\Documents\Proyectos\polleadaSP\src\images\88_urban_poster_mockup.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	display: flex;
+	width: 800px;
+	height: 200px;
+}
 
-  .texto1 {
-    display: flex;
-    width: 400px;
-    margin-top: 60px;
-  }
- 
-  .video {
-    margin-top: 80px;
+.texto1 {
+	display: flex;
+	width: 400px;
+	margin-top: 60px;
+}
 
-  }
+.video {
+	margin-top: 80px;
+}
 
-  .flechaAbajoInicio {
-    display:flex;
-    justify-content: center;
-    background-color: #61dafb;
-  }
+.flechaAbajoInicio {
+	display: flex;
+	justify-content: center;
+	background-color: #61dafb;
+}
 
-  .imagencitas {
-    display: flex;
-    flex-wrap: wrap;
-    height: 100%;
-    width: 300px;
-    justify-content: space-between ;
-    margin-top: 40%;
-    margin-bottom: 40%;
-  }
+.imagencitas {
+	display: flex;
+	flex-wrap: wrap;
+	height: 100%;
+	width: 300px;
+	justify-content: space-between;
+	margin-top: 40%;
+	margin-bottom: 40%;
+}
 
+/* Hasta aca todo CSS de INICIO */
 
-  /* Hasta aca todo CSS de INICIO */
+.titulocontacto {
+	display: flex;
+	justify-content: center;
+	border: 1px solid red;
+}
 
-  .titulocontacto {
-    display: flex;
-    justify-content: center;
-    border: 1px solid red;
-    
-  }
-  
-  .contacto {
-    display:flex;
-    justify-content: center;
-    
-  }
+.contacto {
+	display: flex;
+	justify-content: center;
+}
 
-  .formulario {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-  
-  }
+.formulario {
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+}
 
-  .portadaaudiovisual {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    background-image: url(C:\Users\Ian\Documents\Proyectos\polleadaSP\src\images\PORTADA.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 800px;
-  }
+.portadaaudiovisual {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	background-image: url(C:\Users\Ian\Documents\Proyectos\polleadaSP\src\images\PORTADA.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 800px;
+}
 
-  .livesession {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: 100px;
-    
-  }
+.livesession {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin: 100px;
+}
 
-  .textolive{
-    display: flex;
-    flex-direction: column;
-    padding-inline-start: 50px;
-    justify-content: flex-start;
-    width: 400px;
-  }
+.textolive {
+	display: flex;
+	flex-direction: column;
+	padding-inline-start: 50px;
+	justify-content: flex-start;
+	width: 400px;
+}
 
-  .textolive2{
-    display: flex;
-    flex-direction: column;
-    padding-inline-start: 50px;
-    width: 400px;
-    height: 300px;
-  }
+.textolive2 {
+	display: flex;
+	flex-direction: column;
+	padding-inline-start: 50px;
+	width: 400px;
+	height: 300px;
+}
 
-  .cuadroFotos {
-    display: flex;
-    justify-content: center;
-  }
+.cuadroFotos {
+	display: flex;
+	justify-content: center;
+}
 
-  .cuadradoFotos {
-    display: flex;
-    width: 200px;
-    height: 200px;
-  }
+.cuadradoFotos {
+	display: flex;
+	width: 200px;
+	height: 200px;
+}
 
-  .cajaFotos {
-    display: flex;
-    height: 100%;
-  }
+.cajaFotos {
+	display: flex;
+	height: 100%;
+}
 
- /* Aca arranco css diseño y redes */
+/* Aca arranco css diseño y redes */
 
- .botonDiseño {
-   display: flex;
-   flex-direction: row;
-   justify-content: center;
-   
- }
+.botonDiseño {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
 
- .portadaDiseño {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  background-image: url(http://127.0.0.1:8887/PORTADA%20dise%C3%B1o.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 800px;
- }
+.portadaDiseño {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	background-image: url(http://127.0.0.1:8887/PORTADA%20dise%C3%B1o.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 800px;
+}
 
- .tituloDiseño {
-   display: flex;
-   justify-content: center;
-   height: 50px;
-   margin-top: 80px;
-  
- }
+.tituloDiseño {
+	display: flex;
+	justify-content: center;
+	height: 50px;
+	margin-top: 80px;
+}
 
- .videoclipAudiovisual {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   margin-top: 100px;
-  border-top-width: 50px;
-  
- margin-bottom: 100px;
- }
+.videoclipAudiovisual {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 100px;
+	border-top-width: 50px;
+
+	margin-bottom: 100px;
+}
 
 .tituloSpot {
-  display: flex;
-  justify-content: center;
-  
+	display: flex;
+	justify-content: center;
 }
 
 .descripcionSpot {
-  display: flex;
- justify-content: center;
-  color: rgb(55, 99, 100);
+	display: flex;
+	justify-content: center;
+	color: rgb(55, 99, 100);
 }
 
 .ute {
-  display: flex;
-   justify-content: center;
-   height: 50px;
-   margin-top: 80px;
-  
+	display: flex;
+	justify-content: center;
+	height: 50px;
+	margin-top: 80px;
 }
 
 .descripcionUte {
-  display: flex;
-  justify-content: center;
+	display: flex;
+	justify-content: center;
 }
 
 .videoFraza {
-  display: flex;
-  justify-content: center;
+	display: flex;
+	justify-content: center;
 }
-
 
 /* Aca arranco pantalla 3D */
 
 .portada3D {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  background-image: url(http://127.0.0.1:8887/portada3D.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 800px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	background-image: url(http://127.0.0.1:8887/portada3D.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 800px;
 }
 
 .fotos3D {
-  display: flex;
-  justify-content: center;
-  margin-top: 50px;
+	display: flex;
+	justify-content: center;
+	margin-top: 50px;
 }
 
 .teclados {
-  display: flex;
-  justify-content: center;
-  
+	display: flex;
+	justify-content: center;
 }
 
 .fotosEfecto {
-  display: flex;
-  justify-content: center;
-  height: 700px;
-  margin-top: 100px;
-  
+	display: flex;
+	justify-content: center;
+	height: 700px;
+	margin-top: 100px;
 }
 
 .fotosEfecto2 {
-  display: flex;
-  justify-content: center;
-  height: 500px;
+	display: flex;
+	justify-content: center;
+	height: 500px;
 }
 
 .fotosEfecto3 {
-  display: flex;
-  justify-content: center;
-  height: 400px;
+	display: flex;
+	justify-content: center;
+	height: 400px;
 }
 
 .fotosEfecto4 {
-  display: flex;
-  justify-content: center;
-  height: 700px;
-  margin-top: -100px;
+	display: flex;
+	justify-content: center;
+	height: 700px;
+	margin-top: -100px;
 }
 
 .fotosEfecto5 {
-  display: flex;
-  justify-content: center;
-  height: 500px;
+	display: flex;
+	justify-content: center;
+	height: 500px;
 }
 
 .fotosEfecto6 {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-top: 80px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-top: 80px;
 }

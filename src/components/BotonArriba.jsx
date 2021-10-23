@@ -1,14 +1,12 @@
-import React from "react"
-import { FaAngleDown } from "react-icons/fa";
+import React from 'react'
+import Urls from '../util/Urls'
 
+const BotonArriba = ({ onClickProp }) => {
+	return (
+		<button className="flechitaDelOrto" onClick={onClickProp}>
+			<img style={{ height: 70 }} src={`${Urls.Inicio}flechablanca.png`} />
+		</button>
+	)
+}
 
-const BotonArriba = ({ onClickProp}) => {
-    return (
-      <button className="flechitaDelOrto" onClick={onClickProp}>
-        <img  style={{height:70}} src="http://127.0.0.1:8887/flechablanca2.png"></img>
-      </button>
-    );
-  };
-
-
-  export default BotonArriba
+export default BotonArriba

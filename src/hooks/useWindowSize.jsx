@@ -22,4 +22,9 @@ const useWindowSize = () => {
 	return windowSize
 }
 
+export const useResponsive = () => {
+	const { width } = useWindowSize()
+	return width < 900
+}
+
 export default useWindowSize
