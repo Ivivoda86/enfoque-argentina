@@ -1,7 +1,7 @@
 import React from 'react'
 import Urls from '../util/Urls'
 
-const imagenes = ['illustrator', 'audition', 'photoshop', 'xd', 'cubase', 'blender', 'ae', 'fruta', 'wing', 'pt', 'studioOne', 'substance', 'houdini']
+const imagenes = ['illustrator', 'audition', 'photoshop', 'xd','ae', 'cubase', 'blender', , 'fruta', 'wing', 'pt', 'studioOne', 'substance', 'houdini']
 
 const Imagencitas = () => {
 	return (

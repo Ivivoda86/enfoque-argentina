@@ -1,30 +1,48 @@
 import React from "react";
+import { useResponsive } from "../hooks/useWindowSize";
 
 const Cuadrado = (props) => {
-    const {imagen1,imagen2,imagen3,imagen4} = props
+  const {imagen1, imagen2, imagen3, imagen4} = props;
+  const imagenes1 = [imagen1,imagen2]
+  const imagenes2 = [imagen3,imagen4]
+  const isMobile = useResponsive()
   return (
-    <div style={{ display: "flex", flexDirection: "column", height: 600, marginLeft:"25%" }}>
-      <div style={{ display: "flex", height: "100%", width: "60%" }}>
-        <img
-          style={{ margin: 10, width: 500, height: 250 }}
-          src={imagen1}
-        />
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        height: 600,
+        marginLeft: "25%",
+      }}
+    >
+      <div style={isMobile? {display:"flex", height:"100%", justifyContent:"center"} : { display: "flex", height: "100%", width: "60%" }}>
+        {imagenes1.map((item) => {
+          return (
+            <img style={isMobile ? {margin:10, width:"200px", height:"200px"} : { margin: 10, width: 500, height: 250 }} src={item} />
+          );
+        })}
+        {/* <img style={{ margin: 10, width: 500, height: 250 }} src={imagen1} />
         <img
           style={{ margin: 10, width: 500, height: 250 }}
           src={imagen2}
-        ></img>
+        ></img> */}
       </div>
 
-      <div style={{ display: "flex", height: "100%", width: "60%" }}>
-        <img
+      <div style={isMobile? {display:"flex", height:"100%", justifyContent:"center"} : { display: "flex", height: "100%", width: "60%" }}>
+      {imagenes2.map((item) => {
+          return (
+            <img style={isMobile ? {margin:10, width:"200px", height:"200px"} : { margin: 10, width: 500, height: 250 }} src={item}/>
+          );
+        })}
+        {/* <img
           style={{ margin: 10, width: 500, height: 250 }}
           src={imagen3}
         ></img>
         <img
           style={{ margin: 10, width: 500, height: 250 }}
           src={imagen4}
-        ></img>
-      </div>
+        ></img> */}
+      </div> 
     </div>
   );
 };

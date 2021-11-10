@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 import Formulario from "../components/Formulario";
 import Tabla from "../components/Tabla";
+// import useWindowSize, { useResponsive } from "./hooks/useWindowSize";
 
 const Contacto = () => {
   const { contactos, setContactos } = useState([{}]);
 
   return (
+
     <div>
       <div className="titulocontacto">
         <h1> CONTACTO</h1>

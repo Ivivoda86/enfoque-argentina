@@ -1,4 +1,4 @@
-const baseUrl = 'http://192.168.0.70:5050/'
+const baseUrl = 'http://192.168.0.15:5050/'
 const imagenes = `${baseUrl}images/`
 
 const Urls = {
@@ -9,3 +9,4 @@ const Urls = {
 }
 
 export default Urls
+

@@ -1,22 +1,26 @@
-import React from 'react'
-import { useHistory } from 'react-router-dom'
-import Urls from '../util/Urls'
+import React from "react";
+import { useHistory } from "react-router-dom";
+import { useResponsive } from "../hooks/useWindowSize";
+import Urls from "../util/Urls";
 
 const BotonIconos = (props) => {
-	const { nombreBoton, imagen, ruta } = props
-	const history = useHistory()
-	return (
-		<div className="botonesInicio">
-			<img
-				src={`${Urls.Inicio}${imagen}`}
-				style={{ height: '150px', width: '150px', borderRadius: '50%', cursor: 'pointer' }}
-				onClick={() => {
-					history.push(ruta)
-				}}
-			/>
-			<div style={{ display: 'flex', justifyContent: 'center', marginTop: '30px' }}>{nombreBoton}</div>
-		</div>
-	)
-}
+  const isMobile = useResponsive();
+  const { nombreBoton, imagen, ruta } = props;
+  const history = useHistory();
+  return (
+    <div className="botonesInicio">
+      <img
+        src={`${Urls.Inicio}${imagen}`}
+        className={isMobile ? "imagenesBotonesMobile" : "imagenesBotones"}
+        onClick={() => {
+          history.push(ruta);
+        }}
+      />
+      <div className={isMobile ? "nombreBotoncitosMobile" : "nombreBotoncitos"}>
+        {nombreBoton}
+      </div>
+    </div>
+  );
+};
 
-export default BotonIconos
+export default BotonIconos;

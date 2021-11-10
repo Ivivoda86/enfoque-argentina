@@ -52,21 +52,52 @@ button {
 	min-height: 200px;
 }
 
+.footerMobile {
+	display:"flex";
+	background-color: black;
+	
+	
+}
+
+.redesFooterMobile {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.contactoFooterMobile {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 80px;
+	margin-top: 20px;
+}
+
 .enfoqueFooter {
 	display: flex;
 	margin: 100px;
+}
+
+.enfoqueFooterMobile {
+	display: flex;
+	justify-content: center;
+	height: 10px;
+	
 }
 
 .redesFooter {
 	display: flex;
 	justify-content: left;
 	margin: 100px;
+	align-items: center;
 }
 
 .contactoFooter {
 	display: flex;
-	justify-content: left;
+	justify-content: right;
 	margin: 100px;
+	align-items: center;
 }
 
 .links {
@@ -76,6 +107,23 @@ button {
 	justify-content: flex-end;
 	letter-spacing: 1pt;
 	list-style: none;
+}
+
+.linksMobile {
+	background-color: #282c34;
+	color:black;
+	text-decoration: none;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	letter-spacing: 1pt;
+	list-style: none;
+}
+
+.menuMobile {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .rutitas {
@@ -101,8 +149,43 @@ button {
 	display: flex;
 	/* width: 400px; */
 	justify-content: center;
-	border-bottom: 2px solid darkslategrey;
 	font-size: 25px;
+}
+
+.produMobile {
+	display: flex;
+	font-size: 10px;
+	justify-content: center;
+
+}
+
+.nombreBotoncitos {
+	display: flex;
+	justify-content: center;
+	margin-top: 30%;
+}
+
+.nombreBotoncitosMobile {
+	display: flex;
+	justify-content: center;
+	max-width: 10px;
+
+}
+
+
+.imagenesBotones {
+	height: 150px;
+	width: 150px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.imagenesBotonesMobile {
+	height: 80px;
+	width: 80px;
+	border-radius: 50%;
+	cursor: pointer;
+	margin-top: -150px
 }
 
 .inicio {
@@ -127,8 +210,15 @@ button {
 	justify-content: center;
 	align-items: center;
 	margin-top: 200px;
-	border-spacing: 1px;
-	border-bottom: 2px solid rgb(55, 99, 100);
+	
+}
+.tituloMobile {
+	font-size: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	
 }
 
 .tituloAudio {
@@ -138,13 +228,12 @@ button {
 }
 
 .botoncitos {
-	width: 1000px;
 	display: flex;
 	margin-top: 150px;
-	flex-direction: row;
-	justify-content: space-around;
+	justify-content: space-around ;
 	align-items: center;
 	height: 100px;
+	
 }
 
 .botonesInicio {
@@ -165,8 +254,10 @@ button {
 }
 
 .fotosCarro {
-	width: 100%;
+	width: 60%;
 	margin-top: 50px;
+	margin-left: 20%;
+
 }
 
 .botonCarro {
@@ -217,8 +308,24 @@ button {
 	margin-top: 60px;
 }
 
+.texto1Mobile {
+	display: flex;
+	width: 300px;
+	margin-top: 250px;
+}
+
 .video {
 	margin-top: 80px;
+	display: flex;
+	justify-content: center;
+	
+}
+
+.videoMobile {
+	display: flex;
+	margin: 10%;
+	width: 10px;
+	height: 40px;
 }
 
 .flechaAbajoInicio {
@@ -230,19 +337,26 @@ button {
 .imagencitas {
 	display: flex;
 	flex-wrap: wrap;
-	height: 100%;
+	height: 50px;
 	width: 300px;
 	justify-content: space-between;
-	margin-top: 40%;
-	margin-bottom: 40%;
+	margin-top: 10%;
+	margin-bottom: 20%;
+}
+
+.imagenesInicio {
+	display: flex;
+	justify-content: center;
+	height: 400px;
 }
 
 /* Hasta aca todo CSS de INICIO */
 
 .titulocontacto {
 	display: flex;
+	width: 100%;
 	justify-content: center;
-	border: 1px solid red;
+	
 }
 
 .contacto {
@@ -268,9 +382,17 @@ button {
 	height: 800px;
 }
 
+
 .livesession {
 	display: flex;
 	flex-direction: row;
+	justify-content: center;
+	margin: 100px;
+}
+
+.livesessionMobile {
+	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	margin: 100px;
 }
@@ -282,6 +404,12 @@ button {
 	justify-content: flex-start;
 	width: 400px;
 }
+.textoLiveMobile {
+	width: 200px;
+	display: flex;
+	flex-direction: column;
+	
+}
 
 .textolive2 {
 	display: flex;
@@ -289,6 +417,12 @@ button {
 	padding-inline-start: 50px;
 	width: 400px;
 	height: 300px;
+}
+
+.textolive2Mobile{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .cuadroFotos {
@@ -340,8 +474,15 @@ button {
 	align-items: center;
 	margin-top: 100px;
 	border-top-width: 50px;
-
 	margin-bottom: 100px;
+}
+
+.videoClipAudiovisualMobile {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+
 }
 
 .tituloSpot {
@@ -349,10 +490,22 @@ button {
 	justify-content: center;
 }
 
+.tituloSpotMobile {
+	width: max-content;
+	margin: 10% ;
+}
+
 .descripcionSpot {
 	display: flex;
 	justify-content: center;
 	color: rgb(55, 99, 100);
+}
+
+.descripcionSpotMobile {
+	display: flex;
+	color: rgb(55, 99, 100);
+	width: 100%;
+	margin: 10%
 }
 
 .ute {
@@ -384,6 +537,10 @@ button {
 	background-size: cover;
 	width: 100%;
 	height: 800px;
+}
+
+.titulo3D{
+	justify-content: end;
 }
 
 .fotos3D {

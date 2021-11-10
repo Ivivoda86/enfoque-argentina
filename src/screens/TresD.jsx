@@ -1,24 +1,41 @@
 import React, { useRef } from "react";
 import BotonArriba from "../components/BotonArriba";
 import BotonIconos from "../components/BotonIconos";
-
+import { useResponsive } from "../hooks/useWindowSize";
+import Urls from "../util/Urls";
 
 const TresD = () => {
+  const isMobile = useResponsive();
+  
   const scrollRef = useRef(null);
   return (
     <div>
-      <div className="portada3D">
-        <div style={{ display: "flex", justifyContent: "center" }}>
-          <BotonIconos id="boton3d"></BotonIconos>
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          flexDirection: "column",
+        }}
+      >
+        <img
+          className="portada3D"
+          src={`${Urls.TresD}portada3D.png`}
+        />
+        <div style={{ display: "flex", position: "absolute", top: "30%" }}>
+          <BotonIconos imagen="3d_icon.png"></BotonIconos>
         </div>
-        <div>
-          <h1 align="center" className="titulo3D">
-            3D
-          </h1>
-          <hr color="darkslategray" width="300"></hr>
+        <div style={{ display: "flex", position: "absolute", top: "50%" }}>
+          <h1>3D</h1>
         </div>
-        <h3>Modelado, animación y texturizado 3D</h3>
-        <div>
+        <hr
+          style={{ display: "flex", position: "absolute", top: "60%" }}
+          color="darkslategray"
+          width="300"
+        ></hr>
+        <h3 style={{ display: "flex", position: "absolute", top: "65%" }}>
+          Modelado, animación y texturizado 3D
+        </h3>
+        <div style={{ display: "flex", position: "absolute", top: "80%" }}>
           {" "}
           <BotonArriba
             className="botonAbajo"
@@ -37,7 +54,7 @@ const TresD = () => {
           marginBottom: "100px",
         }}
       >
-        <img ref={scrollRef}  src="http://127.0.0.1:8887/1%203.png"></img>
+        <img ref={scrollRef} src={`${Urls.TresD}13.png`}></img>
       </div>
       <div style={{ display: "flex", flexDirection: "column" }}>
         <div className="videoFraza">
@@ -54,17 +71,20 @@ const TresD = () => {
         <div className="fotos3D">
           <img
             style={{ width: 500 }}
-            src="http://127.0.0.1:8887/2%203.png"
+            src={`${Urls.TresD}23.png`}
           ></img>
         </div>
         <div className="teclados">
           <img
             style={{ width: 500 }}
-            src="http://127.0.0.1:8887/3%203.png"
+            src={`${Urls.TresD}33.png`}
           ></img>
         </div>
         <div className="fotos3D">
-            <img style={{width:500, marginBottom: 200, marginTop:-70}} src="http://127.0.0.1:8887/4%203.png"></img>
+          <img
+            style={{ width: 500, marginBottom: 200, marginTop: -70 }}
+            src={`${Urls.TresD}43.png`}
+          ></img>
         </div>
       </div>
     </div>
