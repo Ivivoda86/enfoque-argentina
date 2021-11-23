@@ -80,7 +80,7 @@ const Diseño = () => {
       <h2>Campaña demostración (Adidas)</h2>
       </div>
       <div className="fotosEfecto5">
-        <img src={`${Urls.Diseño}6 diseño.png`}></img>
+        <img src={`${Urls.Diseño}6.png`}></img>
       </div>
       <div className="fotosEfecto5">
         <img

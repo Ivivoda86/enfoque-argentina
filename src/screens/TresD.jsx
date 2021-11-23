@@ -6,7 +6,7 @@ import Urls from "../util/Urls";
 
 const TresD = () => {
   const isMobile = useResponsive();
-  
+
   const scrollRef = useRef(null);
   return (
     <div>
@@ -17,10 +17,7 @@ const TresD = () => {
           flexDirection: "column",
         }}
       >
-        <img
-          className="portada3D"
-          src={`${Urls.TresD}portada3D.png`}
-        />
+        <img className="portada3D" src={`${Urls.TresD}portada3D.png`} />
         <div style={{ display: "flex", position: "absolute", top: "30%" }}>
           <BotonIconos imagen="3d_icon.png"></BotonIconos>
         </div>
@@ -69,16 +66,10 @@ const TresD = () => {
           ></iframe>
         </div>
         <div className="fotos3D">
-          <img
-            style={{ width: 500 }}
-            src={`${Urls.TresD}23.png`}
-          ></img>
+          <img style={{ width: 500 }} src={`${Urls.TresD}23.png`}></img>
         </div>
         <div className="teclados">
-          <img
-            style={{ width: 500 }}
-            src={`${Urls.TresD}33.png`}
-          ></img>
+          <img style={{ width: 500 }} src={`${Urls.TresD}33.png`}></img>
         </div>
         <div className="fotos3D">
           <img
