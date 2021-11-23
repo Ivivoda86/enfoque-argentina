@@ -1,4 +1,6 @@
-const baseUrl = 'http://192.168.0.15:5050/'
+const { VITE_BASE_URL } = import.meta.env
+
+const baseUrl = VITE_BASE_URL
 const imagenes = `${baseUrl}images/`
 
 const Urls = {
@@ -9,4 +11,3 @@ const Urls = {
 }
 
 export default Urls
-
