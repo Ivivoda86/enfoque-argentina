@@ -55,7 +55,7 @@ const AudioVisual = () => {
         </div>
         <img
           className="portadaaudiovisual"
-          src={`${Urls.Audiovisual}PORTADA.JPG`}
+          src={`${Urls.Audiovisual}PORTADA.jpg`}
         />
       </div>
 
@@ -96,7 +96,7 @@ const AudioVisual = () => {
       </div>
       <div style={{ width: "50" }}>
         <Cuadrado
-          imagen1={`${Urls.Audiovisual}1.jpg`}
+          imagen1={`${Urls.Audiovisual}1.JPG`}
           imagen2={`${Urls.Audiovisual}2.JPG`}
           imagen3={`${Urls.Audiovisual}3.png`}
           imagen4={`${Urls.Audiovisual}4.png`}

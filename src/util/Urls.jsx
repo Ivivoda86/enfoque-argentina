@@ -6,7 +6,7 @@ const imagenes = `${baseUrl}images/`
 const Urls = {
 	Inicio: `${imagenes}Inicio/`,
 	Audiovisual: `${imagenes}Audiovisual/`,
-	TresD: `${imagenes}TresD/`,
+	TresD: `${imagenes}3D/`,
 	Diseño: `${imagenes}Diseño/`,
 }
 
