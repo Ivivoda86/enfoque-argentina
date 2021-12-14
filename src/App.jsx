@@ -1,12 +1,11 @@
 import { useState } from "react";
 import logo from "./logo.svg";
 import "./App.css";
-import Inicio from "./screens/Inicio";
-import Contacto from "./screens/Contacto";
-import Audio from "./screens/Audio";
-import TresD from "./screens/TresD";
-import Diseño from "./screens/Diseño";
-import AudioVisual from "./screens/AudioVisual";
+import Inicio from "./Inicio/Inicio";
+import Contacto from "./Contacto/Contacto";
+import TresD from "./3D/TresD";
+import Diseño from "./Diseño/Diseño";
+import AudioVisual from "../src/AudioVisual/AudioVisual";
 import {
   BrowserRouter as Router,
   Switch,
@@ -22,13 +21,17 @@ import Footer from "./components/Footer";
 import Carru from "./components/Carru";
 import Urls from "./util/Urls";
 import Dashboard from "./components/Dashboard";
+import Fotografia from "./screens/Fotografia";
+import Web from "./screens/Web"
 
 const rutas = [
   { ruta: "/audiovisual", nombre: "AudioVisual" },
   { ruta: "/diseño", nombre: "Diseño" },
   { ruta: "/3D", nombre: "3D" },
-  { ruta: "/audio", nombre: "Audio" },
+  { ruta: "/fotografia", nombre: "Fotografía" },
+  { ruta: "/web", nombre: "Páginas Web y Streamings" },
   { ruta: "/contacto", nombre: "Contacto" },
+  
 ];
 
 const routes = [
@@ -36,8 +39,9 @@ const routes = [
   { nombre: "/audiovisual", componente: <AudioVisual /> },
   { nombre: "/diseño", componente: <Diseño /> },
   { nombre: "/3D", componente: <TresD /> },
-  { nombre: "/audio", componente: <Audio /> },
-  { nombre: "/contacto", componente: <Contacto /> },
+  { nombre: "/fotografia", componente: <Fotografia /> },
+  { nombre: "/contacto", componente: <Contacto />},
+  { nombre: "/web", componente: <Web />}
 ];
 
 const App = () => {
@@ -90,7 +94,7 @@ const App = () => {
         <div style={{ flex: 1 }} />
 
         {isMobile ? (
-          <div style={{display:"flex", alignItems:"center"}}>
+          <div style={{ display: "flex", alignItems: "center" }}>
             <Dashboard
               ruta={
                 <div>

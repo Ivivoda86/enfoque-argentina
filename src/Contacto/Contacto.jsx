@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import Formulario from "../components/Formulario";
 import Tabla from "../components/Tabla";
 // import useWindowSize, { useResponsive } from "./hooks/useWindowSize";
+import "../Contacto/Contacto.css"
+
 
 const Contacto = () => {
   const { contactos, setContactos } = useState([{}]);

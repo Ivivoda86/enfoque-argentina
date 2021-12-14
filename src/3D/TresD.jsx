@@ -3,6 +3,7 @@ import BotonArriba from "../components/BotonArriba";
 import BotonIconos from "../components/BotonIconos";
 import { useResponsive } from "../hooks/useWindowSize";
 import Urls from "../util/Urls";
+import "../3D/TresD.css";
 
 const TresD = () => {
   const isMobile = useResponsive();

@@ -4,6 +4,7 @@ import BotonArriba from "../components/BotonArriba";
 import Cuadrado from "../components/Cuadrado";
 import Urls from "../util/Urls";
 import { useResponsive } from "../hooks/useWindowSize";
+import "../AudioVisual/AudioVisual.css"
 
 const AudioVisual = () => {
   const scrollRef = useRef(null);
@@ -185,8 +186,8 @@ const AudioVisual = () => {
         </h2>
         <div style={{ display: "flex", justifyContent: "center" }}>
           <iframe
-            width="560"
-            height="315"
+            width="800"
+            height="500"
             src="https://www.youtube.com/embed/tUtJBGirW9I"
             title="YouTube video player"
             frameborder="0"
@@ -207,7 +208,7 @@ const AudioVisual = () => {
             src={`${Urls.Audiovisual}1UTE.png`}
           />
           <img
-            style={{ display: "flex", width: "60%", height: 400, margin: 10 }}
+            style={{ display: "flex", width: "40%", height: 400, margin: 10 }}
             src={`${Urls.Audiovisual}2UTE.png`}
           />
         </div>

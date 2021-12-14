@@ -1,5 +1,9 @@
 @import url("https://www.dafont.com/es/akira-expanded.font");
 
+@font-face {
+  font-family: akira;
+  src: url(akira.otf);
+}
 
 body {
   background-color: #1c1c1c;

@@ -3,8 +3,8 @@ import Button from "@mui/material/Button";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import Fade from "@mui/material/Fade";
-import AudioVisual from "../screens/AudioVisual";
-import TresD from "../screens/TresD";
+import AudioVisual from "../AudioVisual/AudioVisual";
+import TresD from "../3D/TresD";
 import Urls from "../util/Urls";
 
 const Dashboard = (props) => {

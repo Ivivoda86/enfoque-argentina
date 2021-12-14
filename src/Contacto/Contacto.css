@@ -1,0 +1,17 @@
+.titulocontacto {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	
+}
+
+.contacto {
+	display: flex;
+	justify-content: center;
+}
+
+.formulario {
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+}

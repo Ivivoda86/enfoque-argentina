@@ -1,0 +1,123 @@
+.portadaaudiovisual {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	background-image: url(C:\Users\Ian\Documents\Proyectos\polleadaSP\src\images\PORTADA.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 800px;
+}
+
+
+.livesession {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin: 100px;
+}
+
+.livesessionMobile {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 100px;
+}
+
+.textolive {
+	display: flex;
+	flex-direction: column;
+	padding-inline-start: 50px;
+	justify-content: flex-start;
+	width: 400px;
+}
+.textoLiveMobile {
+	width: 200px;
+	display: flex;
+	flex-direction: column;
+	
+}
+
+.textolive2 {
+	display: flex;
+	flex-direction: column;
+	padding-inline-start: 50px;
+	width: 400px;
+	height: 300px;
+}
+
+.textolive2Mobile{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.cuadroFotos {
+	display: flex;
+	justify-content: center;
+}
+
+.cuadradoFotos {
+	display: flex;
+	width: 200px;
+	height: 200px;
+}
+
+.cajaFotos {
+	display: flex;
+	height: 100%;
+}
+
+.videoclipAudiovisual {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 100px;
+	border-top-width: 50px;
+	margin-bottom: 100px;
+}
+
+.videoClipAudiovisualMobile {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+
+}
+
+.tituloSpot {
+	display: flex;
+	justify-content: center;
+}
+
+.tituloSpotMobile {
+	width: max-content;
+	margin: 10% ;
+}
+
+.descripcionSpot {
+	display: flex;
+	justify-content: center;
+	color: rgb(55, 99, 100);
+}
+
+.descripcionSpotMobile {
+	display: flex;
+	color: rgb(55, 99, 100);
+	width: 100%;
+	margin: 10%
+}
+
+.ute {
+	display: flex;
+	justify-content: center;
+	height: 50px;
+	margin-top: 80px;
+}
+
+.descripcionUte {
+	display: flex;
+	justify-content: center;
+}
+

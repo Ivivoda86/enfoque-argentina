@@ -1,0 +1,70 @@
+.portada3D {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	background-image: url(http://127.0.0.1:8887/portada3D.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 800px;
+}
+
+.titulo3D{
+	justify-content: end;
+}
+
+.fotos3D {
+	display: flex;
+	justify-content: center;
+	margin-top: 50px;
+}
+
+.teclados {
+	display: flex;
+	justify-content: center;
+}
+
+.fotosEfecto {
+	display: flex;
+	justify-content: center;
+	height: 700px;
+	margin-top: 100px;
+}
+
+.fotosEfecto2 {
+	display: flex;
+	justify-content: center;
+	height: 500px;
+}
+
+.fotosEfecto3 {
+	display: flex;
+	justify-content: center;
+	height: 400px;
+}
+
+.fotosEfecto4 {
+	display: flex;
+	justify-content: center;
+	height: 700px;
+	margin-top: -100px;
+}
+
+.fotosEfecto5 {
+	display: flex;
+	justify-content: center;
+	height: 500px;
+}
+
+.fotosEfecto6 {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-top: 80px;
+}
+
+.videoFraza {
+	display: flex;
+	justify-content: center;
+}

@@ -1,0 +1,126 @@
+.nombreBotoncitos {
+	display: flex;
+	justify-content: center;
+	margin-top: 10%;
+}
+
+.nombreBotoncitosMobile {
+	display: flex;
+	justify-content: center;
+	max-width: 10px;
+
+}
+
+
+.imagenesBotones {
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.imagenesBotonesMobile {
+	height: 80px;
+	width: 80px;
+	border-radius: 50%;
+	cursor: pointer;
+	margin-top: -150px
+}
+
+.inicio {
+	display: flex;
+	/* align-items: center; */
+	flex-direction: column;
+	border-bottom: #61dafb;
+}
+
+.carrusel {
+	display: flex;
+	align-items: center;
+	margin-top: 400px;
+	width: 800px;
+	height: 100px;
+}
+
+.titulo {
+	font-size: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 200px;
+	
+}
+.tituloMobile {
+	font-size: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+.carrousel3 {
+	background-image: url(C:\Users\Ian\Documents\Proyectos\polleadaSP\src\images\88_urban_poster_mockup.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	display: flex;
+	width: 800px;
+	height: 200px;
+}
+
+.video {
+	margin-top: 80px;
+	display: flex;
+	justify-content: center;
+	
+}
+
+.videoMobile {
+	display: flex;
+	margin: 10%;
+	width: 10px;
+	height: 40px;
+}
+
+.flechaAbajoInicio {
+	display: flex;
+	justify-content: center;
+	background-color: #61dafb;
+}
+
+.imagencitas {
+	display: flex;
+	flex-wrap: wrap;
+	height: 50px;
+	width: 300px;
+	justify-content: space-between;
+	margin-top: 10%;
+	margin-bottom: 20%;
+}
+
+.imagenesInicio {
+	display: flex;
+	justify-content: center;
+	height: 400px;
+}
+
+.texto1 {
+	display: flex;
+	width: 400px;
+	margin-top: 60px;
+}
+
+.texto1Mobile {
+	display: flex;
+	width: 300px;
+	margin-top: 250px;
+}
+
+
+.fotosCarro {
+	width: 60%;
+	margin-top: 50px;
+	margin-left: 20%;
+
+}

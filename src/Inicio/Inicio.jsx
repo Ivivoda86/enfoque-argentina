@@ -6,6 +6,7 @@ import Imagencitas from "../components/Imagencitas";
 import Carrousell from "../components/Carrousell";
 import Carru from "../components/Carru";
 import { useResponsive } from "../hooks/useWindowSize";
+import "../Inicio/Inicio.css"
 
 const Inicio = () => {
   const isMobile = useResponsive();
@@ -13,9 +14,9 @@ const Inicio = () => {
   return (
     <div className="inicio">
       <div className={isMobile ? "produMobile" : "produ"}>
-        <h1>PRODUCCIONES AUDIOVISUALES</h1>
+        {/* <h1>PRODUCCIONES AUDIOVISUALES</h1> */}
       </div>
-      <hr align="center" color="darkslategray" width="500" />
+      {/* <hr align="center" color="darkslategray" width="500" /> */}
 
       <div className="botoncitos">
         <BotonIconos
@@ -33,6 +34,16 @@ const Inicio = () => {
           imagen="3d_icon.png"
           ruta={"/3D"}
         ></BotonIconos>
+        <BotonIconos
+          nombreBoton={"FOTOGRAFÍA"}
+          imagen="fotografia_icon.png"
+          ruta={"/fotografia"}
+        />
+        <BotonIconos
+          nombreBoton={"PÁGINAS WEB Y STREAMING"}
+          imagen="web_icon.png"
+          ruta={"/web"}
+        />
       </div>
 
       <div ref={scrollRef} className={isMobile ? "tituloMobile" : "titulo"}>
@@ -77,7 +88,7 @@ const Inicio = () => {
         )}
       </div>
       <div style={{ display: "flex", justifyContent: "center" }}>
-        <p className={isMobile? "texto1Mobile" : "texto1"}>
+        <p className={isMobile ? "texto1Mobile" : "texto1"}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut

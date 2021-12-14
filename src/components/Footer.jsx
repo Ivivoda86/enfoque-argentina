@@ -12,7 +12,7 @@ const Footer = (imagen) => {
           style={{ height: 30 }}
           src={`${Urls.Inicio}ig.png`}
         />
-        @EnfoqueArgentina{" "}
+       {" "} @EnfoqueArgentina
       </div>
       <div className={isMobile ? "enfoqueFooterMobile" : "enfoqueFooter"}>
         <img
@@ -26,7 +26,7 @@ const Footer = (imagen) => {
           src={`${Urls.Inicio}telefono.png`}
           alt=""
         />
-        Contacto
+        {" "}Contacto
       </div>
     </div>
   );

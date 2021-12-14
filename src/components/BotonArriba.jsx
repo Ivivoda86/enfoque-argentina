@@ -3,7 +3,7 @@ import Urls from '../util/Urls'
 
 const BotonArriba = ({ onClickProp }) => {
 	return (
-		<button className="flechitaDelOrto" onClick={onClickProp}>
+		<button className="flechitaAbajo" onClick={onClickProp}>
 			<img style={{ height: 70 }} src={`${Urls.Inicio}flechablanca.png`} />
 		</button>
 	)
