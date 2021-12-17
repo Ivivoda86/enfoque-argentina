@@ -15,3 +15,15 @@
 	justify-content: center;
 	margin-top: 20px;
 }
+
+.formularioMobile {
+	display: flex;
+	width: 10px;
+	height: 25%;
+}
+
+.input {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}

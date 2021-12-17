@@ -183,6 +183,17 @@ button {
 	
 }
 
+.botoncitosMobile  {
+	display: flex;
+	flex-wrap: wrap;
+	height: 200px;
+	justify-content: space-between;
+	margin-top: 200px;
+	width: 300px;
+	margin-left: auto;	
+	
+}
+
 .botoncitos2 {
 	display: flex;
 	margin-top: 150px;

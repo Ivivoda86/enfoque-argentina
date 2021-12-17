@@ -18,7 +18,7 @@ const Inicio = () => {
       </div>
       {/* <hr align="center" color="darkslategray" width="500" /> */}
 
-      <div className="botoncitos">
+      <div className={isMobile ? "botoncitosMobile" : "botoncitos"}>
         <BotonIconos
           nombreBoton={"AUDIOVISUAL"}
           imagen="video_icon.png"
@@ -40,7 +40,7 @@ const Inicio = () => {
           ruta={"/fotografia"}
         />
         <BotonIconos
-          nombreBoton={"PÁGINAS WEB Y STREAMING"}
+          nombreBoton={"WEB Y STREAMING"}
           imagen="web_icon.png"
           ruta={"/web"}
         />
@@ -55,7 +55,7 @@ const Inicio = () => {
           ></BotonArriba>
         </div>
         {isMobile ? (
-          <div style={{ display: "flex", fontSize: "initial" }}>
+          <div style={{ display: "flex", fontSize: "initial", marginLeft:"100px" }}>
             <h1>QUIENES SOMOS</h1>
           </div>
         ) : (
@@ -100,7 +100,7 @@ const Inicio = () => {
       </div>
 
       <hr style={{ width: "400px", marginTop: "100px" }}></hr>
-      <Carru />
+      {/* <Carru /> */}
       <div className="imagenesInicio">
         <Imagencitas />
       </div>

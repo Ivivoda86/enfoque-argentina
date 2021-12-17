@@ -21,15 +21,15 @@ import Footer from "./components/Footer";
 import Carru from "./components/Carru";
 import Urls from "./util/Urls";
 import Dashboard from "./components/Dashboard";
-import Fotografia from "./screens/Fotografia";
-import Web from "./screens/Web"
+import Fotografia from "./Fotografia/Fotografia";
+import Web from "./Web/Web"
 
 const rutas = [
   { ruta: "/audiovisual", nombre: "AudioVisual" },
   { ruta: "/diseño", nombre: "Diseño" },
   { ruta: "/3D", nombre: "3D" },
   { ruta: "/fotografia", nombre: "Fotografía" },
-  { ruta: "/web", nombre: "Páginas Web y Streamings" },
+  { ruta: "/web", nombre: "Web y Streaming" },
   { ruta: "/contacto", nombre: "Contacto" },
   
 ];
