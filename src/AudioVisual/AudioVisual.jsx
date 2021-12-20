@@ -18,7 +18,7 @@ const AudioVisual = () => {
 					flexDirection: 'column',
 				}}
 			>
-				<div style={isMobile ? { display: 'flex', position: 'absolute', top: '50%' } : { display: 'flex', position: 'absolute', top: '30%' }}>
+				<div style={{ display: 'flex', position: 'absolute', top: isMobile? '60%' : "30%" }}>
 					<BotonIconos imagen="video_icon.png"></BotonIconos>
 				</div>
 				<div style={{ display: 'flex', position: 'absolute', top: '50%' }}>

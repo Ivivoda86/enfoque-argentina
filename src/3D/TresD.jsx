@@ -42,12 +42,12 @@ const TresD = () => {
 					display: 'flex',
 					width: isMobile ? 50 : undefined,
 					justifyContent: isMobile? 'right': 'center',
-					height: isMobile ? 300 : 500,
+					height: isMobile ? 500 : 500,
 					marginTop: '150px',
 					marginBottom: isMobile ? 10 : 100,
 				}}
 			>
-				<img style={isMobile ? { height: 200, width: 250 } : undefined} ref={scrollRef} src={`${Urls.TresD}13.png`}></img>
+				<img style={isMobile ? { height: 400, width: 300 } : undefined} ref={scrollRef} src={`${Urls.TresD}13.png`}></img>
 			</div>
 			<div style={{ display: 'flex', flexDirection: 'column' }}>
 				<div className="videoFraza">

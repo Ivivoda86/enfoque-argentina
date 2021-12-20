@@ -52,12 +52,10 @@
 	
 }
 .tituloMobile {
-	font-size: 30px;
+	font-size: 30px;;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
 	align-items: center;
-	
 }
 
 .carrousel3 {

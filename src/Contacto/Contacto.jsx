@@ -1,25 +1,25 @@
-import React, { useState } from 'react'
-import Form from '../components/Form'
-import Formulario from '../components/Formulario'
-import Tabla from '../components/Tabla'
+import React, { useState } from "react";
+import Form from "../components/Form";
+import Formulario from "../components/Formulario";
+import Tabla from "../components/Tabla";
 // import useWindowSize, { useResponsive } from "./hooks/useWindowSize";
-import '../Contacto/Contacto.css'
-import useWindowSize, { useResponsive } from '../hooks/useWindowSize'
+import "../Contacto/Contacto.css";
+import useWindowSize, { useResponsive } from "../hooks/useWindowSize";
 
 const Contacto = () => {
-	const { height, width } = useWindowSize()
-	const isMobile = useResponsive()
-	const { contactos, setContactos } = useState([{}])
+  const { height, width } = useWindowSize();
+  const isMobile = useResponsive();
+  const { contactos, setContactos } = useState([{}]);
 
-	return (
-		<div>
-			<div className="titulocontacto">
-				<h1> CONTACTO</h1>
-			</div>
-			<div className="formulario">
-				<Form></Form>
-			</div>
-			{/* <div className={isMobile ? 'formularioMobile' : 'formulario'}>
+  return (
+    <div>
+      <div className="titulocontacto">
+        <h1> CONTACTO</h1>
+      </div>
+      <div className="formulario">
+        <Form></Form>
+      </div>
+      {/* <div className={isMobile ? 'formularioMobile' : 'formulario'}>
 				<Formulario
 					inputs={[
 						{ placeholder: 'Nombre y Apellido', name: 'nombre' },
@@ -50,8 +50,8 @@ const Contacto = () => {
 				></Formulario>
 			</div>
 			<div></div> */}
-		</div>
-	)
-}
+    </div>
+  );
+};
 
-export default Contacto
+export default Contacto;

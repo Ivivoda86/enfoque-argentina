@@ -118,13 +118,12 @@ button {
 
 .linksMobile {
 	background-color: #282c34;
-	color:black;
 	text-decoration: none;
 	display: flex;
 	flex-direction: column;
-	justify-content: flex-end;
 	letter-spacing: 1pt;
 	list-style: none;
+	
 }
 
 .menuMobile {
@@ -190,7 +189,7 @@ button {
 	justify-content: space-between;
 	margin-top: 200px;
 	width: 300px;
-	margin-left: auto;	
+	margin-left: 15%;	
 	
 }
 

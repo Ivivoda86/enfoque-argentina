@@ -27,7 +27,10 @@ const Dashboard = (props) => {
         aria-expanded={open ? "true" : undefined}
         onClick={handleClick}
       >
-        <img style={{height:"40px"}} src={`${Urls.Inicio}botonMenu.png`}></img>
+        <img
+          style={{ height: "40px" }}
+          src={`${Urls.Inicio}botonMenu.png`}
+        ></img>
       </Button>
       <Menu
         id="fade-menu"
@@ -38,6 +41,7 @@ const Dashboard = (props) => {
         open={open}
         onClose={handleClose}
         TransitionComponent={Fade}
+        className="menuMejorado"
       >
         <MenuItem onClick={handleClose}>{ruta}</MenuItem>
       </Menu>

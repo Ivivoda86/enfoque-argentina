@@ -25,7 +25,7 @@ const Cuadrado = (props) => {
 		>
 			<div style={isMobile ? { display: 'flex', height: '100%', justifyContent: 'center' } : { display: 'flex', height: '100%', width: '60%' }}>
 				{imagenes1.map((item) => {
-					return <img style={isMobile ? { width: '120px', height: '120px' } : { margin: 10, width: 500, height: 250 }} src={item} />
+					return <img style={isMobile ? { width: '120px', height: '120px', margin:10 } : { margin: 10, width: 500, height: 250 }} src={item} />
 				})}
 				{/* <img style={{ margin: 10, width: 500, height: 250 }} src={imagen1} />
         <img
@@ -36,7 +36,7 @@ const Cuadrado = (props) => {
 
 			<div style={isMobile ? { display: 'flex', height: '100%', justifyContent: 'center' } : { display: 'flex', height: '100%', width: '60%' }}>
 				{imagenes2.map((item) => {
-					return <img style={isMobile ? { width: '120px', height: '120px' } : { margin: 10, width: 500, height: 250 }} src={item} />
+					return <img style={isMobile ? { width: '120px', height: '120px', margin:10 } : { margin: 10, width: 500, height: 250 }} src={item} />
 				})}
 				{/* <img
           style={{ margin: 10, width: 500, height: 250 }}

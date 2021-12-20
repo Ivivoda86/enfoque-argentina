@@ -91,9 +91,10 @@
 }
 
 .tituloSpotMobile {
-	width: 100px;
-	font-size: xx-large;
-	margin: 10% ;
+	width: 1000px;
+	font-size: medium;
+	margin:10%;
+
 }
 
 .descripcionSpot {
