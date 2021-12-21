@@ -55,11 +55,11 @@ const Diseño = () => {
           </div>
         </div>
 
-        <div></div>
+        
         <hr
           style={{ display: "flex", position: "absolute", top: "60%" }}
           color="darkslategray"
-          width="300"
+          width={isMobile? 100 : 300} 
         ></hr>
         <div
           style={{
@@ -84,15 +84,15 @@ const Diseño = () => {
             justifyContent: "center",
             height: "50px",
             marginTop: "80px",
-            fontSize: isMobile ? "large" : undefined,
+            fontSize: isMobile ? "small" : undefined,
           }}
         >
           FLYERS / PUBLICACIONES
         </h1>
-        <hr color="darkslategray" width="400"></hr>
+        <hr color="darkslategray" width={isMobile? 100 : 400 }></hr>
       </div>
       <div style={{ display: "flex", justifyContent: "center" }}>
-        <p style={{ width: "520px" }}>
+        <p style={{ width: isMobile? 200 : "520px" }}>
           Analizamos tus redes sociales y buscamos la mejor estética y
           contenido. De esta manera es mucho mas fácil llegar al público
           objetivo. Todos los diseños estan pensados para que tus redes se vean
@@ -124,7 +124,7 @@ const Diseño = () => {
         <img
           style={{
             height: isMobile ? "300px" : undefined,
-            width: isMobile ? "350px" : undefined,
+            width: isMobile ? "300px" : undefined,
           }}
           src={`${Urls.Diseño}3_diseño.png`}
         ></img>
@@ -136,7 +136,7 @@ const Diseño = () => {
         <img
           style={{
             height: isMobile ? "400px" : undefined,
-            width: isMobile ? "400px" : undefined,
+            width: isMobile ? "300px" : undefined,
           }}
           src={`${Urls.Diseño}4_diseño.png`}
         ></img>

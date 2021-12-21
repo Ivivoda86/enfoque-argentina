@@ -41,7 +41,6 @@ const TresD = () => {
 				style={{
 					display: 'flex',
 					width: isMobile ? 50 : undefined,
-					justifyContent: isMobile? 'right': 'center',
 					height: isMobile ? 500 : 500,
 					marginTop: '150px',
 					marginBottom: isMobile ? 10 : 100,

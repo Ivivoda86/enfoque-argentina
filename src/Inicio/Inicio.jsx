@@ -55,20 +55,20 @@ const Inicio = () => {
           ></BotonArriba>
         </div>
         {isMobile ? (
-          <div style={{ display: "flex", fontSize: "initial", marginLeft:"100px" }}>
+          <div style={{ display: "flex", fontSize: isMobile? 10 : undefined }}>
             <h1>QUIENES SOMOS</h1>
           </div>
         ) : (
           <h1>QUIENES SOMOS</h1>
         )}
 
-        <hr align="center" color="darkslategray" width="500" />
+        <hr align="center" color="darkslategray" width={isMobile? 200: 500} />
       </div>
       <div className={isMobile ? "videoMobile" : "video"}>
         {isMobile ? (
           <iframe
-            width="400"
-            height="250"
+            width="200"
+            height="200"
             src="https://www.youtube.com/embed/wDJ9nkADSF8"
             title="YouTube video player"
             frameborder="0"
@@ -99,9 +99,9 @@ const Inicio = () => {
         </p>
       </div>
 
-      <hr style={{ width: "400px", marginTop: "100px" }}></hr>
+      <hr style={{ width: isMobile? "200px" : "400px", marginTop: "100px" }}></hr>
       {/* <Carru /> */}
-      <div className="imagenesInicio">
+      <div className={isMobile? "imagenesInicioMobile" : "imagenesInicio"}>
         <Imagencitas />
       </div>
     </div>

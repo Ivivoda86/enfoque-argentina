@@ -8,25 +8,55 @@ const Fotografia = () => {
   const isMobile = useResponsive();
   return (
     <div>
-      <div style={{ marginTop: isMobile? 200 : 100 }}>
-        <BotonIconos
-          imagen="fotografia_icon.png"
-          ruta={"/fotografia"}
-        ></BotonIconos>
-        <h1
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          flexDirection: "column",
+        }}
+      >
+        <div
           style={{
             display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-			marginTop:-50
-			
+            position: "absolute",
+            top: isMobile ? "60%" : "30%",
           }}
         >
-          Fotografia
-        </h1>
-      </div>
-      <div style={{marginTop:100, display:"flex", flexDirection:"column", alignItems:"center"}}>
-        <BotonArriba />
+          <BotonIconos
+            imagen="fotografia_icon.png"
+            ruta={"/fotografia"}
+          ></BotonIconos>
+        </div>
+        <div
+          style={{
+            display: "flex",
+            position: "absolute",
+            top: isMobile ? "52%" : "50%",
+          }}
+        >
+          <h1
+            style={{
+              fontSize: isMobile ? "small" : undefined,
+            }}
+          >
+            Fotografia
+          </h1>
+        </div>
+        <hr
+          style={{ display: "flex", position: "absolute", top: "60%" }}
+          color="darkslategray"
+          width="300"
+        ></hr>
+
+        <div
+          style={{
+            display: "flex",
+            position: "absolute",
+            top: "80%",
+          }}
+        >
+          <BotonArriba classname="botonAbajo" />
+        </div>
       </div>
     </div>
   );

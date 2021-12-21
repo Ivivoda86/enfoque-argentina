@@ -8,7 +8,7 @@
 	display: flex;
 	justify-content: center;
 	max-width: 10px;
-
+	font-size: small;
 }
 
 
@@ -24,7 +24,7 @@
 	width: 80px;
 	border-radius: 50%;
 	cursor: pointer;
-	margin-top: -150px
+	margin-top: -140px
 }
 
 .inicio {
@@ -76,9 +76,9 @@
 
 .videoMobile {
 	display: flex;
-	margin: 10%;
 	width: 10px;
 	height: 40px;
+	margin-left: 20%;
 }
 
 .flechaAbajoInicio {
@@ -97,10 +97,26 @@
 	margin-bottom: 20%;
 }
 
+.imagencitasMobile {
+	display: flex;
+	flex-wrap: wrap;
+	height: 50px;
+	width: 200px;
+	justify-content: space-between;
+	margin-top: 10%;
+	margin-bottom: 20%;
+}
+
 .imagenesInicio {
 	display: flex;
 	justify-content: center;
 	height: 400px;
+}
+
+.imagenesInicioMobile {
+	display: flex;
+	justify-content: center;
+	height: 200px;
 }
 
 .texto1 {
@@ -111,7 +127,7 @@
 
 .texto1Mobile {
 	display: flex;
-	width: 300px;
+	width: 200px;
 	margin-top: 250px;
 }
 

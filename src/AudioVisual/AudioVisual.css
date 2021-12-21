@@ -10,6 +10,14 @@
 	height: 800px;
 }
 
+.tituloAudio {
+	border-spacing: 5px;
+	
+}
+
+.tituloAudioMobile {
+	font-size: small;
+}
 
 .livesession {
 	display: flex;
@@ -91,9 +99,9 @@
 }
 
 .tituloSpotMobile {
-	width: 1000px;
+	width: 280px;
 	font-size: medium;
-	margin:10%;
+	margin-left: 30px;
 
 }
 
@@ -106,8 +114,8 @@
 .descripcionSpotMobile {
 	display: flex;
 	color: rgb(55, 99, 100);
-	width: 100%;
-	margin: 10%
+	width: 200px;
+	margin: 20%
 }
 
 .ute {
@@ -122,6 +130,3 @@
 	justify-content: center;
 }
 
-.videoFrazaMobile {
-
-}

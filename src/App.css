@@ -62,19 +62,18 @@ button {
 	display:"flex";
 	background-color: black;
 	
-	
 }
 
 .redesFooterMobile {
 	display: flex;
-	justify-content: center;
+	justify-content: left;
 	align-items: center;
 	margin-bottom: 20px;
 }
 
 .contactoFooterMobile {
 	display: flex;
-	justify-content: center;
+	justify-content: right;
 	align-items: center;
 	height: 80px;
 	margin-top: 20px;
@@ -167,11 +166,7 @@ button {
 
 
 
-.tituloAudio {
-	font-size: 50px;
-	border-spacing: 5px;
-	border-bottom: 3px solid rgb(55, 99, 100);
-}
+
 
 .botoncitos {
 	display: flex;
@@ -185,11 +180,11 @@ button {
 .botoncitosMobile  {
 	display: flex;
 	flex-wrap: wrap;
-	height: 200px;
+	height: 250px;
 	justify-content: space-between;
 	margin-top: 200px;
 	width: 300px;
-	margin-left: 15%;	
+	margin-left: 10%;
 	
 }
 

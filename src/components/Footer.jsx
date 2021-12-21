@@ -9,24 +9,21 @@ const Footer = (imagen) => {
     <div className={isMobile ? "footerMobile" : "footer"}>
       <div className={isMobile ? "redesFooterMobile" : "redesFooter"}>
         <img
-          style={{ height: 30 }}
+          style={{ height: isMobile ? 15 : 30 }}
           src={`${Urls.Inicio}ig.png`}
         />
-       {" "} @EnfoqueArgentina
+        @EnfoqueArgentina
       </div>
       <div className={isMobile ? "enfoqueFooterMobile" : "enfoqueFooter"}>
-        <img
-          style={{ height: 40 }}
-          src={`${Urls.Inicio}Enfoque.png`}
-        ></img>
+        <img style={{ height: 40 }} src={`${Urls.Inicio}Enfoque.png`}></img>
       </div>
       <div className={isMobile ? "contactoFooterMobile" : "contactoFooter"}>
         <img
-          style={{ height: 30 }}
+          style={{ height: isMobile ? 15 : 30 }}
           src={`${Urls.Inicio}telefono.png`}
           alt=""
-        />
-        {" "}Contacto
+        />{" "}
+        Contacto
       </div>
     </div>
   );

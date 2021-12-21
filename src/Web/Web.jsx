@@ -8,28 +8,52 @@ const Web = () => {
   const isMobile = useResponsive();
   return (
     <div>
-      <div style={{ marginTop: isMobile ? 200 : 100 }}>
-        <BotonIconos imagen="web_icon.png" ruta={"/web"}></BotonIconos>
-        <h1
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            marginTop: -50,
-            fontSize: isMobile ? "large" : undefined,
-          }}
-        >
-          Web y Streaming
-        </h1>
-      </div>
       <div
         style={{
           display: "flex",
+          alignItems: "center",
           flexDirection: "column",
-          marginTop: isMobile ? 50 : 100,
         }}
       >
-        <BotonArriba />
+        <div
+          style={{
+            display: "flex",
+            position: "absolute",
+            top: isMobile ? "60%" : "30%",
+          }}
+        >
+          <BotonIconos imagen="web_icon.png" ruta={"/web"}></BotonIconos>
+        </div>
+        <div
+          style={{
+            display: "flex",
+            position: "absolute",
+            top: isMobile ? "52%" : "50%",
+          }}
+        >
+          <h1
+            style={{
+              fontSize: isMobile ? "small" : undefined,
+            }}
+          >
+            Web y Streaming
+          </h1>
+        </div>
+        <hr
+          style={{ display: "flex", position: "absolute", top: "60%" }}
+          color="darkslategray"
+          width="300"
+        ></hr>
+
+        <div
+          style={{
+            display: "flex",
+            position: "absolute",
+            top: "80%",
+          }}
+        >
+          <BotonArriba />
+        </div>
       </div>
     </div>
   );
