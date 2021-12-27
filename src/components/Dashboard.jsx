@@ -6,9 +6,11 @@ import Fade from "@mui/material/Fade";
 import AudioVisual from "../AudioVisual/AudioVisual";
 import TresD from "../3D/TresD";
 import Urls from "../util/Urls";
+import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 
 const Dashboard = (props) => {
-  const { ruta } = props;
+  const history = useHistory();
+  const { ruta, ruta2, ruta3, ruta4, ruta5, menu, nombre } = props;
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
   const handleClick = (event) => {
@@ -43,7 +45,27 @@ const Dashboard = (props) => {
         TransitionComponent={Fade}
         className="menuMejorado"
       >
-        <MenuItem onClick={handleClose}>{ruta}</MenuItem>
+        {menu.map((item) => {
+          return (
+            <MenuItem
+              key={item.nombre}
+              onClick={() => {
+                history.push(item.ruta);
+                handleClose(true)
+            
+              }}
+            >
+              {item.nombre}
+            </MenuItem>
+          );
+        })}
+        {/* <MenuItem onClick={handleClose}>{ruta}</MenuItem> */}
+
+        {/* <MenuItem onClick={ruta1}>AudioVisual</MenuItem>
+        <MenuItem onClick={ruta2}>Diseño</MenuItem>
+        <MenuItem onClick={ruta3}>3D</MenuItem>
+        <MenuItem onClick={ruta4}>Fotografia</MenuItem>
+        <MenuItem onClick={ruta5}>Contacto</MenuItem> */}
       </Menu>
     </div>
   );

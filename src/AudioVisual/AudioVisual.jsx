@@ -52,7 +52,7 @@ const AudioVisual = () => {
         >
           Preproducción, producción y postproducción. Motion graphics.
         </h3>
-        <div style={{ display: "flex", position: "absolute", top: "90%" }}>
+        <div style={{ display: "flex", position: "absolute", top: "80%" }}>
           <BotonArriba
             className="botonAbajo"
             onClickProp={() => {
@@ -203,7 +203,7 @@ const AudioVisual = () => {
           style={
             isMobile
               ? { display: "flex", marginLeft: "10%" }
-              : { display: "flex", marginLeft: "30%" }
+              : { display: "flex", marginLeft: "25%" }
           }
         >
           Jornada de Luto y Homenaje
@@ -257,7 +257,7 @@ const AudioVisual = () => {
           />
         </div>
       </div>
-      <h2 style={{ display: "flex", marginLeft: "30%" }}>Frazadazo</h2>
+      <h2 style={{ display: "flex", marginLeft: "25%" }}>Frazadazo</h2>
       <div className="frazadazo">
         <div className="videoFraza">
           {isMobile ? (

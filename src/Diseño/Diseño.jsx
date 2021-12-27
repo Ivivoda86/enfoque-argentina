@@ -150,7 +150,7 @@ const Diseño = () => {
           src={`${Urls.Diseño}5_diseño.png`}
         ></img>
       </div>
-      <div style={{ display: "flex", marginLeft: isMobile ? "5%" : "19%" }}>
+      <div style={{ display: "flex", marginLeft: isMobile ? "5%" : "25%" }}>
         <h2>Campaña demostración (Adidas)</h2>
       </div>
       <div className={isMobile? "fotosEfecto5Mobile" : "fotosEfecto5"}>

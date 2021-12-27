@@ -22,7 +22,7 @@ import Carru from "./components/Carru";
 import Urls from "./util/Urls";
 import Dashboard from "./components/Dashboard";
 import Fotografia from "./Fotografia/Fotografia";
-import Web from "./Web/Web"
+import Web from "./Web/Web";
 
 const rutas = [
   { ruta: "/audiovisual", nombre: "AudioVisual" },
@@ -31,7 +31,6 @@ const rutas = [
   { ruta: "/fotografia", nombre: "Fotografía" },
   { ruta: "/web", nombre: "Web y Streaming" },
   { ruta: "/contacto", nombre: "Contacto" },
-  
 ];
 
 const routes = [
@@ -40,8 +39,8 @@ const routes = [
   { nombre: "/diseño", componente: <Diseño /> },
   { nombre: "/3D", componente: <TresD /> },
   { nombre: "/fotografia", componente: <Fotografia /> },
-  { nombre: "/contacto", componente: <Contacto />},
-  { nombre: "/web", componente: <Web />}
+  { nombre: "/contacto", componente: <Contacto /> },
+  { nombre: "/web", componente: <Web /> },
 ];
 
 const App = () => {
@@ -56,6 +55,12 @@ const App = () => {
           {item.componente}
         </Route>
       );
+    });
+  };
+
+  const getMenu = () => {
+    return rutas.map((item) => {
+      return <li key={item.ruta}></li>;
     });
   };
 
@@ -96,11 +101,15 @@ const App = () => {
         {isMobile ? (
           <div style={{ display: "flex", alignItems: "center" }}>
             <Dashboard
-              ruta={
-                <div>
-                  <ul className="linksMobile">{getLink(rutas)}</ul>
-                </div>
-              }
+              // ruta1={"/AudioVisual"}
+              menu={[
+                { nombre: "Audiovisual", ruta: "/audioVisual" },
+                { nombre: "Diseño Gráfico ", ruta: "/diseño" },
+                { nombre: "3D", ruta: "/3D" },
+                { nombre: "Fotografía", ruta: "/fotografia" },
+                { nombre: "Web Y Streaming", ruta: "/web" },
+                { nombre: "Contacto", ruta: "/contacto" },
+              ]}
             />
           </div>
         ) : (
