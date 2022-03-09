@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import BotonArriba from "../components/BotonArriba";
 import BotonIconos from "../components/BotonIconos";
 import useWindowSize, { useResponsive } from "../hooks/useWindowSize";
@@ -6,6 +6,7 @@ import useWindowSize, { useResponsive } from "../hooks/useWindowSize";
 const Fotografia = () => {
   const { height, width } = useWindowSize();
   const isMobile = useResponsive();
+
   return (
     <div>
       <div
